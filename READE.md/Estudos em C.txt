@@ -2,18 +2,15 @@ Estudos em C
 
 Repositório com exercícios e projetos que estou desenvolvendo enquanto aprendo linguagem C.
 
-Conteúdos estudados
-
+Conteúdos estudados:
 * if / else
 * while / do while
 * printf / scanf
 
-Organização
-
+Organização:
 * basico/ → exercícios simples
 * loops/ → estruturas de repetição
 * projetos/ → pequenos projetos
 
-Objetivo
-
+Objetivo:
 Desenvolver lógica de programação e evoluir na área de tecnologia.
