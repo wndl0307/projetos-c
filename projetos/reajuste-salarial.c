@@ -3,6 +3,7 @@
 
 int main () {
     char nome_f[50];
+    char encerrar = ' ';
     int doc_i, temp_s;
     float salario_a, calculo_percentual_1, calculo_percentual_2, salario_total, valor_aumento;
 
@@ -10,9 +11,9 @@ int main () {
         printf ("-----------------------------------------------\n");
         printf ("---------------REAJUSTE SALARIAL---------------\n");
         printf ("-----------------------------------------------\n");
-        printf ("Informe o nome do funcionario ou pressione S/s para encerrar o programa: \n");
-        scanf (" %s", nome_f);
-        printf ("Informe o documento de identificacao: \n");
+        printf ("Informe o nome do funcionario: \n");
+        scanf (" %s", &nome_f);
+        printf ("Informe o numero do seu documento de identificacao: \n");
         scanf ("%i", &doc_i);
         printf ("Informe os anos de servico: \n");
         scanf ("%i", &temp_s);
@@ -177,9 +178,12 @@ int main () {
             printf ("\n");
 
         }
-    }
-    while (nome_f != "S" && nome_f != "s");
-        printf ("Programa encerrado");
+
+        printf ("Digite qualquer tecla para continuar ou S/s para encerrar: \n");
+        scanf(" %c", &encerrar);
+
+    } while (encerrar != 'S' && encerrar != 's');
+        printf ("Programa encerrado!\n");
 
     return 0;
 }
